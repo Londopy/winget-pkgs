@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: Londopy.HideDesktopApps
+PackageVersion: 1.2.3
+MinimumOSVersion: 10.0.18362.0
+InstallerType: inno
+Scope: user
+InstallModes:
+  - interactive
+  - silent
+  - silentWithProgress
+UpgradeBehavior: install
+ReleaseDate: 2026-10-01
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/Londopy/HideDesktopApps/releases/download/v1.2.3/HideDesktopApps-v1.2.3-x64-setup.exe
+    InstallerSha256: 7EFA8DCE254654096263EA1221E72C116C02198BEBCEF8C6D0E6FD34582961E8
+  - Architecture: x86
+    InstallerUrl: https://github.com/Londopy/HideDesktopApps/releases/download/v1.2.3/HideDesktopApps-v1.2.3-x86-setup.exe
+    InstallerSha256: AF9428547941D8BC962C736673C13810D5BE3A98792BA97E0F2B4552292867FE
+  - Architecture: arm64
+    InstallerUrl: https://github.com/Londopy/HideDesktopApps/releases/download/v1.2.3/HideDesktopApps-v1.2.3-arm64-setup.exe
+    InstallerSha256: 0307701D257BAB353264F2743FFCED08079D8F1C90EA260A7A5F3E0AB43EF642
+ManifestType: installer
+ManifestVersion: 1.6.0
